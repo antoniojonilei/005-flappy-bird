@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #14252D;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;  
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+[wm-flappy]{
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 650px;
+    width: 1200px;
+    margin: auto;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% -30px);
+    bottom: 50%;
+    right: 50%;
+}
+
+.par-de-barreiras{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black;
+}
+
+.barreira .corpo{
+    height: 40px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.progresso{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3.5em;
+    z-index: 100;
+}
+
+p{
+    text-align: right;
+}
